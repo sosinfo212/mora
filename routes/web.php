@@ -6,9 +6,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-//Route::get('/{page}', 'AdminController@index');
+Auth::routes();
 Route::get('/{page}', [AdminController::class, 'index']);
-
-
-
-
